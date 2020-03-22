@@ -1,0 +1,115 @@
+.header
+  min-height: 100vh
+  position: relative
+  &__bg
+    &-img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: -1
+      display: block
+      object-fit: cover
+  &__nav
+    margin-bottom: 70px
+  &__menu
+    font-family: 'RobotoCondensed', sans-serif
+    max-width: 650px
+    margin-left: auto
+    list-style: none
+    background-color: rgba(37, 37, 37, .45)
+    text-align: center
+    padding: 10px 20px
+    &-item
+      padding: 0 40px
+      position: relative
+      display: inline-block
+      &:first-child
+        padding-left: 0
+      &:last-child
+        padding-right: 0
+      &:not(:last-child)
+        &::after
+          position: absolute
+          display: block
+          content: ''
+          width: 2px
+          height: 21px
+          top: 50%
+          transform: translateY(-50%)
+          right: 0
+          background-color: #fff
+          box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    &-link
+      display: inline-block
+      color: #ffffff
+      text-transform: uppercase
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      &:hover
+        text-decoration: none
+      &:last-child
+        padding-right: 0
+  &__content
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    &-shadow
+      position: absolute
+      width: 350px
+      height: 350px
+      box-shadow: inset 0 0 400px 90px rgba(0,0,0,.3), 0 0 160px 130px rgba(0,0,0,.3)
+      border-radius: 50%
+      z-index: -1
+    &-wrapper
+      min-height: 600px
+      max-width: 650px
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+  &__photo
+    &-img
+      display: block
+      max-width: 186px
+      width: 100%
+      max-height: 186px
+      height: 100%
+      border: 3px solid #ffffff
+      border-radius: 50%
+      object-fit: cover
+      object-position: center
+      margin-bottom: 50px
+  &__title,
+  &__subtitle
+    display: block
+    font-family: 'RobotoCondensed', sans-serif
+    color: #ffffff
+    font-weight: 400
+    line-height: 1
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  &__title
+    position: relative
+    font-size: 72px
+    margin-bottom: 40px
+    &::before,
+    &::after
+      position: absolute
+      display: block
+      content: ''
+      width: 435px
+      height: 3px
+      background-color: #ffffff
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55);
+    &::before
+      top: -15px
+      right: 0
+    &::after
+      bottom: -25px
+      left: 30px
+  &__subtitle
+    font-size: 40px
+    padding-left: 100px
+

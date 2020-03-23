@@ -1,13 +1,37 @@
+html
+  height: 100%
+  width: 100%
+
 body
   font-family: 'Roboto', sans-serif
   font-size: 24px
   font-weight: 400
   line-height: 1.25
   color: $main-color
+  height: 100%
+  width: 100%
+
+a
+  color: #ffffff
+  &:hover
+    text-decoration: none
 
 .container
+  position: relative
   max-width: 1280px
   width: 100%
+  height: 100%
   padding: $gut
   margin: 0 auto
-  
+
+// Social links
+.social
+  &__list
+    list-style: none
+    &-item
+      margin-bottom: 25px
+    &-link
+      color: #ffffff
+    &-icon
+      font-size: 30px
+

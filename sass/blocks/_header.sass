@@ -1,6 +1,9 @@
 .header
   min-height: 100vh
+  height: 100%
   position: relative
+  &__wrapper
+    height: 100%
   &__bg
     &-img
       position: absolute
@@ -12,7 +15,10 @@
       display: block
       object-fit: cover
   &__nav
-    margin-bottom: 70px
+    position: absolute
+    top: 20px
+    right: 0
+    z-index: 1
   &__menu
     font-family: 'RobotoCondensed', sans-serif
     max-width: 650px
@@ -50,11 +56,17 @@
         text-decoration: none
       &:last-child
         padding-right: 0
+  &__social
+    position: absolute
+    top: 45px
+    left: 0
+    z-index: 1
   &__content
     display: flex
     justify-content: center
     align-items: center
     position: relative
+    height: 100%
     &-shadow
       position: absolute
       width: 350px

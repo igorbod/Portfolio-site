@@ -1,8 +1,24 @@
 window.addEventListener('DOMContentLoaded', function () {
   'use strict';
+  
   new WOW().init();
 
-  // add button "ScrollToTop"
+  
+  /* Smooth scroll */
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for(let anchor of anchors) {
+  anchor.addEventListener("click", function(event) {
+    event.preventDefault();
+    const blockID = anchor.getAttribute('href');
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+}
+  
+  /* add button "ScrollToTop" */
   const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
   window.addEventListener("scroll", scrollFunction);

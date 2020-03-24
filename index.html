@@ -21,9 +21,9 @@
   <main class="main">
   <!-- Header -->
     <header class="header">
-      <picture class="header__bg">
+      <picture class="bg bg_header">
         <source type="image/webp" srcset="img/header/main-bg.webp 1x">
-        <img class="header__bg-img" src="img/header/main-bg.jpg" alt="">
+        <img class="bg-img" src="img/header/main-bg.jpg" alt="Background">
       </picture>
       <div class="container">
         <div class="header__wrapper">
@@ -268,6 +268,37 @@
           <a href="#" class="portfolio__see-more button">See more</a>
 
         </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact">
+      <picture class="bg bg_contact">
+        <source type="image/webp" srcset="img/contact/contact-bg.webp 1x">
+        <img class="bg-img" src="img/contact/contact-bg.jpg" alt="Background">
+      </picture>
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="section__title-box contact__title-box">
+            <h2 class="section__title contact__title">Contact</h2>
+            <hr class="section__title-hr">
+            <h3 class="section__subtitle contact__subtitle">
+              If You are interested in my work or have any question, let’s get in touch!
+            </h3>
+          </div>
+        
+        
+          <!-- Form -->
+          <form class="contact__form" action="#">
+            <input class="contact__form-name" name="name" placeholder="Your name*" type="text" required>
+            <input class="contact__form-email" name="email" placeholder="Your E-mail address*" type="email" required>
+            <textarea class="contact__form-info" name="info" placeholder="Your message"></textarea>
+            <span class="contact__form-descr">All fields marked with an asterisk (*) are required</span>
+            <button class="button button_form">Send</button>
+          </form>
+
+        </div>
+
       </div>
     </section>
   

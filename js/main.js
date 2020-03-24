@@ -1,7 +1,9 @@
 window.addEventListener('DOMContentLoaded', function () {
   'use strict';
   
-  new WOW().init();
+  AOS.init( {
+    once: true
+  });
 
   
   /* Smooth scroll */

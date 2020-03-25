@@ -47,21 +47,28 @@ for(let anchor of anchors) {
     });
   });
 
-  /* Open all links in new window */
-  // let linkList = document.querySelectorAll('a.social__list-link');
-  // console.log(linkList);
-
+  /* Form validate*/
+  $('.contact__form').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Пожалуйста, введите свое имя",
+        minlength: jQuery.validator.format("Имя должно быть не меньше {0} символов")
+      },     
+      email: {
+        required: "Укажите пожалуйста ваш e-mail",
+        email: "Неверный формат e-mail"
+      }
+    }
+  });
   
-  // function listener(e) {
-  //   if (e.target.tagName !== 'A') return;
-  //   e.preventDefault();
-  //   window.open(e.target.href, '_blank');
-  //   document.removeEventListener('click', listener);
-  // }
-
-  //   // document.addEventListener('click', listener);
-
-  // linkList.forEach(function(e) {
-  //   e.addEventListener('click', listener);
-  // });
 });

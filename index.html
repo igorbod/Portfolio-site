@@ -39,13 +39,16 @@
 
       <!-- Background image -->
       <picture class="bg bg_header">
+        <!-- <source type="image/webp" srcset="img/header/main-bg767px.webp 1x" media="(max-width: 768px)">
+        <source type="image/webp" srcset="img/header/main-bg1000px.webp 1x" media="(max-width: 1000px)"> -->
         <source type="image/webp" srcset="img/header/main-bg.webp 1x">
         <img class="bg-img bg-img_header" src="img/header/main-bg.jpg" alt="Background">
       </picture>
+
       <div class="container container_header">
         <div class="header__wrapper">
 
-          <nav class="header__nav fadeInRight animated delay-500ms">
+          <nav class="header__nav">
             <ul class="header__menu">
               <li class="header__menu-item">
                 <a href="#" class="header__menu-link">Главная</a>
@@ -64,27 +67,31 @@
 
           <div class="social header__social">
             <ul class="social__list social__list_header">
-              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="200">
+              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="200" data-aos-mirror="false" data-aos-offset="0">
                 <a href="https://www.facebook.com/DereckRocker" target="_blank" class="social__list-link">
                   <span class="icon-facebook-square social__list-icon"></span>
                 </a>
               </li>
-              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="300">
+              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="300"
+                data-aos-offset="0">
                 <a href="https://twitter.com/DereckRocker88" target="_blank" class="social__list-link">
                   <span class="icon-twitter-square social__list-icon"></span>
                 </a>
               </li>
-              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="400">
+              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="400"
+                data-aos-offset="0">
                 <a href="https://www.instagram.com/dereck_rocker88" target="_blank" class="social__list-link">
                   <span class="icon-instagram social__list-icon"></span>
                 </a>
               </li>
-              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="500">
+              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="500"
+                data-aos-offset="0">
                 <a href="https://github.com/igorbod" target="_blank" class="social__list-link">
                   <span class="icon-github-square social__list-icon"></span>
                 </a>
               </li>
-              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="600">
+              <li class="social__list-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="600"
+                data-aos-offset="0">
                 <a href="#" class="social__list-link">
                   <span class="icon-linkedin-square social__list-icon"></span>
                 </a>
@@ -109,254 +116,7 @@
     </header>
     <!-- /Header -->
 
-    <!-- About -->
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="about__wrapper">
-          <div class="about__block about__block_about" data-aos="flip-left" data-aos-easing="ease-out-back" data-aos-duration="1300">
-            <div class="section__title-box about__title-box">
-              <h2 class="section__title about__title-about">Обо мне</h2>
-              <hr class="section__title-hr">
-            </div>
-            <div class="about__header">
-              Hello, my name is Igor. Nice to meet you.
-            </div>
-            <div class="about__text">
-              <p>
-                Now I’m living in Krasnoyarsk, Russia. Currently I’m working as a freelancer and ready to hire. My passion is creating site or some project from blank sheet and see how its grow into some delightful thing, that makes me feel proud. I also like web design and everyday learn something new.
-              </p>
-              <p>
-                For me web developer is greatest profession, because exactly here I can express myself and every single day I derive knowledge from what I do.
-              </p>
-            </div>
-          </div>
-
-          <div class="about__block about__block_skills" data-aos="flip-right" data-aos-easing="ease-out-back" data-aos-duration="1300">
-            <div class="section__title-box about__title-box">
-              <h2 class="section__title about__title-skills">Мои навыки</h2>
-              <hr class="section__title-hr">
-            </div>
-            <ul class="about__skills-list">
-              <li class="about__skills-item">HTML5</li>
-              <li class="about__skills-item">Pug(Jade)</li>
-              <li class="about__skills-item">CSS3</li>
-              <li class="about__skills-item">Sass/SCSS</li>
-              <li class="about__skills-item">JavaScript</li>
-              <li class="about__skills-item">JQuery</li>
-              <li class="about__skills-item">Bootstrap 4</li>
-              <li class="about__skills-item">Flexbox</li>
-              <li class="about__skills-item">CSS Grid</li>
-              <li class="about__skills-item">Git</li>
-              <li class="about__skills-item">Gulp 4</li>
-              <li class="about__skills-item">Avocode</li>
-              <li class="about__skills-item">Figma</li>
-              <li class="about__skills-item">Inkscape</li>
-              <li class="about__skills-item">Adobe Photoshop</li>
-              <li class="about__skills-item">Wordpress</li>
-              <li class="about__skills-item">Joomla</li>
-              <li class="about__skills-item">Responsive/Adaptive</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="section portfolio" id="portfolio">
-      <div class="container">
-        <div class="portfolio__wrapper">
-          <div class="section__title-box portfolio__title-box" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1300">
-            <h2 class="section__title portfolio__title">Портфолио</h2>
-            <hr class="section__title-hr">
-            <h3 class="section__subtitle portfolio__subtitle">Мои последние работы</h3>
-          </div>
-          
-          <div class="portfolio__works-wrapper">
-            
-            <!-- work 1 -->
-            <div class="portfolio__works-item" data-aos="fade-down-right" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="400">
-              <picture class="portfolio__works-screenshot pic">
-                <source type="image/webp" srcset="img/portfolio/work-1.webp 1x">
-                <img class="portfolio__works-img" srcset="img/portfolio/work-1.jpg" alt="screenshot">
-              </picture>
-              <div class="portfolio__works-mask"></div>
-              <div class="portfolio__works-info">
-                <div class="portfolio__works-title">
-                  Work-1
-                </div>
-                <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
-                </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
-              </div>
-            </div>
-
-            <!-- work 2 -->
-            <div class="portfolio__works-item" data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="500">
-              <picture class="portfolio__works-screenshot pic">
-                <source type="image/webp" srcset="img/portfolio/work-2.webp 1x">
-                <img class="portfolio__works-img" srcset="img/portfolio/work-2.jpg" alt="screenshot">
-              </picture>
-              <div class="portfolio__works-mask"></div>
-              <div class="portfolio__works-info">
-                <div class="portfolio__works-title">
-                  Work-2
-                </div>
-                <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
-                </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
-              </div>
-            </div>
-
-            <!-- work 3 -->
-            <div class="portfolio__works-item" data-aos="fade-down-left" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="600">
-              <picture class="portfolio__works-screenshot pic">
-                <source type="image/webp" srcset="img/portfolio/work-3.webp 1x">
-                <img class="portfolio__works-img" srcset="img/portfolio/work-3.jpg" alt="screenshot">
-              </picture>
-              <div class="portfolio__works-mask"></div>
-              <div class="portfolio__works-info">
-                <div class="portfolio__works-title">
-                  Work-3
-                </div>
-                <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
-                </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
-              </div>
-            </div>
-
-            <!-- work 4 -->
-            <div class="portfolio__works-item" data-aos="fade-up-right" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="700">
-              <picture class="portfolio__works-screenshot pic">
-                <source type="image/webp" srcset="img/portfolio/work-4.webp 1x">
-                <img class="portfolio__works-img" srcset="img/portfolio/work-4.jpg" alt="screenshot">
-              </picture>
-              <div class="portfolio__works-mask"></div>
-              <div class="portfolio__works-info">
-                <div class="portfolio__works-title">
-                  Work-4
-                </div>
-                <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
-                </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
-              </div>
-            </div>
-
-            <!-- work 5 -->
-            <div class="portfolio__works-item" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="800">
-              <picture class="portfolio__works-screenshot pic">
-                <source type="image/webp" srcset="img/portfolio/work-5.webp 1x">
-                <img class="portfolio__works-img" srcset="img/portfolio/work-5.jpg" alt="screenshot">
-              </picture>
-              <div class="portfolio__works-mask"></div>
-              <div class="portfolio__works-info">
-                <div class="portfolio__works-title">
-                  Work-5
-                </div>
-                <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
-                </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
-              </div>
-            </div>
-
-            <!-- work 6 -->
-            <div class="portfolio__works-item" data-aos="fade-up-left" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="900">
-              <picture class="portfolio__works-screenshot pic">
-                <source type="image/webp" srcset="img/portfolio/work-6.webp 1x">
-                <img class="portfolio__works-img" srcset="img/portfolio/work-6.jpg" alt="screenshot">
-              </picture>
-              <div class="portfolio__works-mask"></div>
-              <div class="portfolio__works-info">
-                <div class="portfolio__works-title">
-                  Work-6
-                </div>
-                <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
-                </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
-              </div>
-            </div>
-
-          </div>
-          
-          <a href="#" class="portfolio__see-more button">Другие работы</a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact" id="contact">
-      <picture class="bg bg_contact">
-        <source type="image/webp" srcset="img/contact/contact-bg.webp 1x">
-        <img class="bg-img" src="img/contact/contact-bg.jpg" alt="Background">
-      </picture>
-      <div class="container">
-        <div class="contact__wrapper">
-          <div class="section__title-box contact__title-box" data-aos="zoom-in" data-aos-easing="ease-out-back" data-aos-duration="1300">
-            <h2 class="section__title contact__title">Контакты</h2>
-            <hr class="section__title-hr">
-            <h3 class="section__subtitle contact__subtitle">
-              Для связи со мной Вы можете воспользоваться формой ниже, либо другим удобным для Вас способом.
-            </h3>
-          </div>
-
-          <!-- Form -->
-          <form class="contact__form" action="#">
-            <input class="contact__form-name" name="name" placeholder="Ваше имя*" type="text" data-aos="zoom-out-left" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="400">
-            <input class="contact__form-email" name="email" placeholder="Ваш E-mail*" type="email" data-aos="zoom-out-left" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="550">
-            <textarea class="contact__form-info" name="info" placeholder="Сообщение" data-aos="zoom-out-left" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="700"></textarea>
-            <span class="contact__form-descr">(*) Обязательные для заполнения поля</span>
-            <button class="button button_form">Отправить</button>
-          </form>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__wrapper">
-          <div class="social footer__social">
-            <ul class="social__list social__list_footer">
-              <li class="social__list-item fadeInDown animated delay-300ms">
-                <a href="https://www.facebook.com/DereckRocker" target="_blank" class="social__list-link">
-                  <span class="icon-facebook-square social__list-icon"></span>
-                </a>
-              </li>
-              <li class="social__list-item fadeInDown animated delay-400ms">
-                <a href="https://twitter.com/DereckRocker88" target="_blank" class="social__list-link">
-                  <span class="icon-twitter-square social__list-icon"></span>
-                </a>
-              </li>
-              <li class="social__list-item fadeInDown animated delay-500ms">
-                <a href="https://www.instagram.com/dereck_rocker88" target="_blank" class="social__list-link">
-                  <span class="icon-instagram social__list-icon"></span>
-                </a>
-              </li>
-              <li class="social__list-item fadeInDown animated delay-600ms">
-                <a href="https://github.com/igorbod" target="_blank" class="social__list-link">
-                  <span class="icon-github-square social__list-icon"></span>
-                </a>
-              </li>
-              <li class="social__list-item fadeInDown animated delay-700ms">
-                <a href="#" class="social__list-link">
-                  <span class="icon-linkedin-square social__list-icon"></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <span class="footer__descr">
-            Дизайн и разработка Бодягин Игорь, 2020
-          </span>
-        </div>
-      </div>
-    </footer>
+   
   
   </main>
     

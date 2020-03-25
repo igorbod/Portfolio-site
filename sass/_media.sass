@@ -1,0 +1,61 @@
+@media (max-width: 1000px)
+  .header
+    &__menu
+      &-link
+        font-size: 18px
+    &__title
+      font-size: 60px
+      &::before,
+      &::after
+        width: 350px
+    &__subtitle
+      font-size: 34px
+      padding-left: 80px
+
+@media (max-width: 767px)
+  .header
+    &__menu
+      padding: 5px 10px
+      &-item
+        padding: 0 20px
+      &-link
+        font-size: 16px
+
+@media (max-width: 575px)
+  .body_lock
+    overflow: hidden
+  .header
+    &__nav
+      top: -20px
+      right: -20px
+      left: 100%
+      z-index: 2
+      position: fixed
+      width: calc(100% + 20px)
+      height: calc(100% + 20px)
+      transition: all .55s
+      &_active
+        left: 0
+    &__nav.showed
+      left: 0
+    &__menu
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      height: 100%
+      background-color: rgba(37,37,37,0.85)
+      .header__menu-item
+        padding: 0
+        margin: 35px
+        &::after
+          display: none
+      &-link
+        font-size: 34px
+        padding: 15px
+        &:last-child
+          padding-right: 15px
+    
+
+  .ham
+    display: block

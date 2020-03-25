@@ -70,5 +70,24 @@ for(let anchor of anchors) {
       }
     }
   });
+
+  /* Hamburger Menu click */
+  const ScrollLock = document.querySelector('body'),
+        menu = document.querySelector('.header__nav'),
+        menuItem = document.querySelectorAll('.header__menu-item'),
+        hamburgerMenu = document.querySelector('.ham');
   
+  hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('ham_active');
+    menu.classList.toggle('header__nav_active');
+    ScrollLock.classList.toggle('body_lock');
+  });
+
+  menuItem.forEach(item => {
+    item.addEventListener('click', () => {
+      hamburgerMenu.classList.toggle('ham_active');
+      menu.classList.toggle('header__nav_active');
+      ScrollLock.classList.toggle('body_lock');
+    });
+  });
 });

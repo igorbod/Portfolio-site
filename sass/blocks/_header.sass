@@ -13,7 +13,6 @@
     overflow: hidden
   &__menu
     display: inline-block
-    font-family: 'RobotoCondensed', sans-serif
     margin: 0
     list-style: none
     background-color: rgba(37, 37, 37, .45)
@@ -42,12 +41,15 @@
           box-shadow: 0 4px 4px rgba(0,0,0,.25);
     &-link
       display: inline-block
+      font-size: 24px
+      font-weight: 400
+      font-family: 'RobotoCondensed', sans-serif
       padding: 5px
       color: #ffffff
       text-transform: uppercase
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
       transition: all .3s ease
-      overflow: hidden
+      overflow-x: hidden
       position: relative
       line-height: 24px
       vertical-align: middle
@@ -61,10 +63,10 @@
         background: #fff
       &:before
         bottom: 0
-        transform:  translateX(-100%)
+        transform:  translateX(-101%)
       &:after 
         top: 0
-        transform:  translateX(100%)
+        transform:  translateX(101%)
       &:hover:before, &:hover:after
         transform:  translateX(0)
       &:hover

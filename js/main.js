@@ -46,4 +46,22 @@ for(let anchor of anchors) {
       behavior: "smooth"
     });
   });
+
+  /* Open all links in new window */
+  // let linkList = document.querySelectorAll('a.social__list-link');
+  // console.log(linkList);
+
+  
+  // function listener(e) {
+  //   if (e.target.tagName !== 'A') return;
+  //   e.preventDefault();
+  //   window.open(e.target.href, '_blank');
+  //   document.removeEventListener('click', listener);
+  // }
+
+  //   // document.addEventListener('click', listener);
+
+  // linkList.forEach(function(e) {
+  //   e.addEventListener('click', listener);
+  // });
 });

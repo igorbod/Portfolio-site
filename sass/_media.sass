@@ -1,3 +1,15 @@
+@media (max-width: 1200px)
+  .about
+    &__title
+      font-size: 26px
+    &__header
+      font-size: 20px
+    &__block
+      min-width: 300px
+      max-width: 500px
+      &_skills
+        margin-left: 50px
+
 @media (max-width: 1000px)
   .header
     &__menu
@@ -10,7 +22,26 @@
         width: 350px
     &__subtitle
       font-size: 34px
-      // padding-left: 80px
+  
+  .about
+    &__text
+      font-size: 18px
+    &__header
+      font-size: 18px
+      margin-bottom: 30px
+
+@media (max-width: 900px)
+  .about
+    &__wrapper
+      flex-direction: column
+    &__block
+      min-height: 600px
+      &_about
+        margin-bottom: 50px
+      &_skills
+        margin-left: 0
+      
+
 
 @media (max-width: 767px)
   .header
@@ -70,6 +101,10 @@
   .ham
     display: block
 
+  .about
+    &__header
+      font-size: 16px
+
 @media (max-width: 445px)
   .header
     &__title
@@ -102,6 +137,26 @@
       max-width: 145px
       max-height: 145px
       margin-bottom: 35px
+  
+  .about
+    &__title
+      font-size: 24px
+    &__header
+      font-size: 16px
+      max-width: 185px
+      margin: 0 auto
+      margin-bottom: 25px
+    &__text
+      font-size: 14px
+      line-height: 30px
+    &__block
+      padding: 25px
+      &_skills
+        min-height: 450px
+    &__skills-item
+      font-size: 14px
+    
+        
 
 
 @media (max-height: 620px) and (max-width: 1000px) and (min-width: 445px)

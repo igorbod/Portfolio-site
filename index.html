@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/aos.css">
+  <!-- <link rel="stylesheet" href="css/aos.css"> -->
   <link rel="stylesheet" href="css/main.min.css">
 
   <!-- Favicon -->
@@ -310,6 +310,40 @@
           <a href="#" class="portfolio__see-more button">Другие работы</a>
     
         </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <picture class="bg bg_contact">
+        <source type="image/webp" srcset="img/contact/contact-bg900.webp 1x" media="(max-width: 900px)">
+        <source type="image/webp" srcset="img/contact/contact-bg.webp 1x">
+        <img class="bg-img" src="img/contact/contact-bg.jpg" alt="Background">
+      </picture>
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="section__title-box contact__title-box" data-aos="zoom-in" data-aos-easing="ease-out-back"
+            data-aos-duration="1300">
+            <h2 class="section__title contact__title">Контакты</h2>
+            <hr class="section__title-hr">
+            <h3 class="section__subtitle contact__subtitle">
+              Для связи со мной Вы можете воспользоваться формой ниже, либо другим удобным для Вас способом.
+            </h3>
+          </div>
+    
+          <!-- Form -->
+          <form class="contact__form" action="#">
+            <input class="contact__form-name" name="name" placeholder="Ваше имя*" type="text" data-aos="zoom-out-left"
+              data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="400">
+            <input class="contact__form-email" name="email" placeholder="Ваш E-mail*" type="email" data-aos="zoom-out-left"
+              data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="550">
+            <textarea class="contact__form-info" name="info" placeholder="Сообщение" data-aos="zoom-out-left"
+              data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="700"></textarea>
+            <span class="contact__form-descr">(*) Обязательные для заполнения поля</span>
+            <button class="button button_form">Отправить</button>
+          </form>
+        </div>
+    
       </div>
     </section>
     

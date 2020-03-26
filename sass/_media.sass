@@ -40,8 +40,14 @@
         margin-bottom: 50px
       &_skills
         margin-left: 0
-      
-
+  .contact
+    &__wrapper
+      margin: 0 auto
+    &__form
+      &-descr
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.55)
+        display: block
+        text-align: right
 
 @media (max-width: 767px)
   .header
@@ -106,6 +112,11 @@
       font-size: 16px
 
 @media (max-width: 445px)
+  .button_scroll-to-top
+    bottom: 15px
+    right: 15px
+    width: 55px
+    height: 55px
   .header
     &__title
       font-size: 36px
@@ -157,7 +168,6 @@
       font-size: 14px
 
   .portfolio
-    padding: 40px 0
     &__works-item
       max-width: 300px
       min-height: 190px
@@ -167,11 +177,27 @@
       font-size: 24px
     &__subtitle
       font-size: 18px
+
+  .contact
+    &__title
+      font-size: 24px
+    &__subtitle
+      font-size: 16px
+    &__form
+      &-name,
+      &-email,
+      &-info
+        font-size: 16px
+      &-descr
+        font-size: 12px
+  
+.section
+  padding: 40px 0
     
         
 
 
-@media (max-height: 620px) and (max-width: 1000px) and (min-width: 445px)
+@media (max-height: 620px) and (max-width: 1024px) and (min-width: 445px)
   .header
     &__content
       &-wrapper

@@ -1,3 +1,15 @@
+/* Preloader */
+window.onload = function () {
+  let preloader = document.querySelector('.preloader'),
+      body = document.querySelector('body');
+  preloader.classList.toggle('preloader_fade');
+  body.classList.toggle('body-overflow');
+  
+  // setTimeout(() => {
+    
+  // }, 1500);
+};
+
 window.addEventListener('DOMContentLoaded', function () {
   'use strict';
   
@@ -56,7 +68,7 @@ for(let anchor of anchors) {
         minlength: jQuery.validator.format("Имя должно быть не меньше {0} символов")
       },     
       email: {
-        required: "Укажите пожалуйста ваш e-mail",
+        required: "Укажите, пожалуйста, Ваш e-mail",
         email: "Неверный формат e-mail"
       }
     }
@@ -81,4 +93,5 @@ for(let anchor of anchors) {
       ScrollLock.classList.toggle('body_lock');
     });
   });
+
 });

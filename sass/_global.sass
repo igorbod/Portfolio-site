@@ -12,11 +12,6 @@ body
   width: 100%
   overflow-x: hidden
   
-
-.main
-  height: 100%
-  width: 100%
-  
 a
   color: #ffffff
   &:hover
@@ -38,12 +33,12 @@ a
     display: block
     top: 0
     left: 0
-    width: 100%
-    height: 100%
+    width: 100vw
+    height: 100vh
     z-index: 0
     object-fit: cover
     &_header
-      // position: fixed
+      position: fixed
 
 
 // Social links
@@ -52,17 +47,23 @@ a
     padding: 0
     margin: 0
     list-style: none
+    &-item
+      margin-bottom: 25px
+    &-link
+      color: #ffffff
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 1)
+      transition: all .3s
+      &:hover
+        color: #000
+        text-shadow: 3px 3px 5px rgba(255, 255, 255, 1)
+    &-icon
+      font-size: 30px
     &_footer
       .social__list-item
         display: inline-block
         margin: 0 12.5px 0 12.5px
         
-    &-item
-      margin-bottom: 25px
-    &-link
-      color: #ffffff
-    &-icon
-      font-size: 30px
+    
 
 // Section
 .section

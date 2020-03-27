@@ -1,11 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
   'use strict';
   
-  AOS.init( {
-    once: true
-  });
-
-  
   /* Smooth scroll */
 const anchors = document.querySelectorAll('a[href*="#"]');
 

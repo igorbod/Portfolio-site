@@ -1,14 +1,47 @@
-/* Preloader */
-window.onload = function () {
-  let preloader = document.querySelector('.preloader'),
-      body = document.querySelector('body');
-  preloader.classList.toggle('preloader_fade');
-  body.classList.toggle('body-overflow');
+
+
+$(window).on('load', function () {
+  // Get vertical scrollbar width  
+  let getScrollbarWidth = function () {
+    let div, width = getScrollbarWidth.width;
+    if (width === undefined) {
+      div = document.createElement('div');
+      div.innerHTML = '<div style="width:50px;height:50px;position:absolute;left:-50px;top:-50px;overflow:auto;"><div style="width:1px;height:100px;"></div></div>';
+      div = div.firstChild;
+      document.body.appendChild(div);
+      width = getScrollbarWidth.width = div.offsetWidth - div.clientWidth;
+      document.body.removeChild(div);
+    }
+    return width;
+  };
   
-  // setTimeout(() => {
+  
+  // Set flag in session storage for loading preloader
+  if (!sessionStorage.getItem('showPreloader')) {
+    setTimeout(function () {
+      $('.preloader').animate({
+        opacity: "0"
+      }, 50);
+      $("body :not(.preloader) >").animate({
+        opacity: "1"
+      }, 50);
+      sessionStorage.setItem('showPreloader', true);
+      $('body').toggleClass('body-overflow');
+      $('.preloader svg').css('margin-left', getScrollbarWidth());
+      setTimeout(function () {
+        $('.preloader').css('display', 'none');
+      }, 1000);
+    }, 500);
+  } else {
+    $('.preloader').css('opacity', '0');
+    setTimeout(function () {
+      $('.preloader').css('display', 'none');
+    }, 1000);
+    $('body').toggleClass('body-overflow');
+    $('.preloader svg').css('margin-left', getScrollbarWidth());
     
-  // }, 1500);
-};
+  }
+});
 
 window.addEventListener('DOMContentLoaded', function () {
   'use strict';
@@ -93,5 +126,4 @@ for(let anchor of anchors) {
       ScrollLock.classList.toggle('body_lock');
     });
   });
-
 });

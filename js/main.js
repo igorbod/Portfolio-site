@@ -1,5 +1,4 @@
-
-
+/* Preloader */
 $(window).on('load', function () {
   // Get vertical scrollbar width  
   let getScrollbarWidth = function () {
@@ -14,8 +13,7 @@ $(window).on('load', function () {
     }
     return width;
   };
-  
-  
+    
   // Set flag in session storage for loading preloader
   if (!sessionStorage.getItem('showPreloader')) {
     setTimeout(function () {
@@ -43,6 +41,8 @@ $(window).on('load', function () {
   }
 });
 
+
+/* Main Script */
 window.addEventListener('DOMContentLoaded', function () {
   'use strict';
   
@@ -125,5 +125,22 @@ for(let anchor of anchors) {
       menu.classList.toggle('header__nav_active');
       ScrollLock.classList.toggle('body_lock');
     });
+  });
+
+  // Contact from submit
+  $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+
+
+
+      $('form').trigger('reset');
+    });
+    return false;
   });
 });

@@ -38,6 +38,12 @@
     </svg>
   </div>
 
+  <!-- Modal Window message sent-->
+  <div class="modal__message">
+    Ваше сообщение отправлено!
+  </div>
+
+
   <!-- Button ScrollToTop -->
   <button class="button_scroll-to-top" id="btnScrollToTop">
     <span class="icon-arrow-up"></span>
@@ -203,12 +209,12 @@
               <div class="portfolio__works-mask"></div>
               <div class="portfolio__works-info">
                 <div class="portfolio__works-title">
-                  Work-1
+                  Интернет магазин одежды ICNDY
                 </div>
                 <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
+                  Современный дизайн, адаптив, Flexbox, CSS Grid
                 </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
+                <a href="https://icndy.igorbod-webdev.ru/" target="_blank" class="portfolio__works-more">Посмотреть</a>
               </div>
             </div>
     
@@ -221,12 +227,12 @@
               <div class="portfolio__works-mask"></div>
               <div class="portfolio__works-info">
                 <div class="portfolio__works-title">
-                  Work-2
+                  Магазин пульсометров
                 </div>
                 <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
+                  Удобный интерфейс, адаптив, Flexbox, JS
                 </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
+                <a href="https://pulse.igorbod-webdev.ru/" target="_blank" class="portfolio__works-more">Посмотреть</a>
               </div>
             </div>
     
@@ -239,12 +245,12 @@
               <div class="portfolio__works-mask"></div>
               <div class="portfolio__works-info">
                 <div class="portfolio__works-title">
-                  Work-3
+                  Шведская горечь
                 </div>
                 <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
+                  Оригинальный и необычный дизайн, адаптив, Flexbox, JQuery, JS
                 </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
+                <a href="https://swedish-bitter.igorbod-webdev.ru" target="_blank" class="portfolio__works-more">Посмотреть</a>
               </div>
             </div>
     
@@ -257,12 +263,12 @@
               <div class="portfolio__works-mask"></div>
               <div class="portfolio__works-info">
                 <div class="portfolio__works-title">
-                  Work-4
+                  Uber Partners
                 </div>
                 <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
+                  Простой, понятный интерфейс, адаптив, Flexbox, JS
                 </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
+                <a href="https://uber.igorbod-webdev.ru/" target="_blank" class="portfolio__works-more">Посмотреть</a>
               </div>
             </div>
     
@@ -275,12 +281,12 @@
               <div class="portfolio__works-mask"></div>
               <div class="portfolio__works-info">
                 <div class="portfolio__works-title">
-                  Work-5
+                  Комплексное закрытие предприятий
                 </div>
                 <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
+                  Бизнес-сайт, локаничный, строгий дизайн, Flexbox, JS
                 </div>
-                <a href="#" class="portfolio__works-more">Посмотреть</a>
+                <a href="https://cce.igorbod-webdev.ru/" target="_blank" class="portfolio__works-more">Посмотреть</a>
               </div>
             </div>
     
@@ -293,10 +299,10 @@
               <div class="portfolio__works-mask"></div>
               <div class="portfolio__works-info">
                 <div class="portfolio__works-title">
-                  Work-6
+                  Go-Surf
                 </div>
                 <div class="portfolio__works-tech">
-                  HTML5, CSS3, Bootstrap 4, JavaScript, Flexbox, BEM
+                  Очень необычный дизайн, адаптив, JS, Flexbox, JQuery
                 </div>
                 <a href="#" class="portfolio__works-more">Посмотреть</a>
               </div>
@@ -329,6 +335,13 @@
     
           <!-- Form -->
           <form class="contact__form" action="#">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="igorbod-webdev.ru">
+            <input type="hidden" name="recipient_email" value="dereckjdrocker88@gmail.com">
+            <input type="hidden" name="admin_email" value="igorbod.webdev@igorbod-webdev.ru">
+            <input type="hidden" name="form_subject" value="Contact form">
+            <!-- END Hidden Required Fields -->
+            
             <input class="contact__form-name" name="name" placeholder="Ваше имя*" type="text">
             <input class="contact__form-email" name="email" placeholder="Ваш E-mail*" type="email">
             <textarea class="contact__form-info" name="info" placeholder="Сообщение" ></textarea>

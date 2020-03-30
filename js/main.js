@@ -83,29 +83,7 @@ for(let anchor of anchors) {
     });
   });
 
-  /* Form validate*/
-  $('.contact__form').validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 2
-      },
-      email: {
-        required: true,
-        email: true
-      }
-    },
-    messages: {
-      name: {
-        required: "Пожалуйста, введите свое имя",
-        minlength: jQuery.validator.format("Имя должно быть не меньше {0} символов")
-      },     
-      email: {
-        required: "Укажите, пожалуйста, Ваш e-mail",
-        email: "Неверный формат e-mail"
-      }
-    }
-  });
+  
 
   /* Hamburger Menu click */
   const ScrollLock = document.querySelector('body'),
@@ -127,20 +105,61 @@ for(let anchor of anchors) {
     });
   });
 
-  // Contact from submit
-  $('form').submit(function(e) {
-    e.preventDefault();
-    $.ajax({
-      type: "POST",
-      url: "mailer/smart.php",
-      data: $(this).serialize()
-    }).done(function() {
-      $(this).find("input").val("");
-
-
-
-      $('form').trigger('reset');
-    });
-    return false;
+  /* Form validate*/
+  let validator = $('.contact__form').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Пожалуйста, введите свое имя",
+        minlength: jQuery.validator.format("Имя должно быть не меньше {0} символов")
+      },
+      email: {
+        required: "Укажите, пожалуйста, Ваш e-mail",
+        email: "Неверный формат e-mail"
+      }
+    }
   });
+  
+  //E-mail Ajax Send
+  $("form").submit(function (e) { 
+    e.preventDefault();
+    let th = $(this);
+    if (validator.form()) {
+      $.ajax({
+        type: "POST",
+        url: "mail/mail.php",
+        data: th.serialize()
+      }).done(function () {
+        setTimeout(function () {
+          // Done Functions
+          th.trigger("reset");
+          $('.modal__message').animate({
+            top: "1%"
+          }, 50).delay(5000);
+          $('.modal__message').animate({
+            top: "-100%"
+          }, 50);
+        }, 1000);
+      });
+    } else {
+      return false;
+    }
+
+
+    // setTimeout(function () {
+    //   $('.modal__message').toggleClass('modal__message-active');
+    // }, 100);
+
+    // $('.modal__message').toggleClass('modal__message-active').delay(1000);
+  });
+
 });
